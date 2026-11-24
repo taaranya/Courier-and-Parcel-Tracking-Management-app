@@ -1,0 +1,59 @@
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Staff ID: Saved.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Status (In Transit/Out for Delivery/Returned): Location: Saved.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Status (In Transit/Out for Delivery/Returned): Location: Saved.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Outcome (Delivered/Failed): Failure reason: Location: Saved.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Outcome (Delivered/Failed): Location: Saved.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: stamp | status | location
+2026-11-18 | Booked | Booking office
+2026-11-18 | In Transit | Hub
+2026-11-18 | Out for Delivery | Town B
+2026-11-18 | Delivered | Town B
+stamp | outcome | reason
+2026-11-18 | Failed | Receiver absent
+2026-11-18 | Delivered | 
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Tracking number: Status (In Transit/Out for Delivery/Returned): Location: Rejected: Shipment is closed.
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: tracking | destination | status
+(no records)
+tracking | destination
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe | Town B
+tracking | destination
+(no records)
+name | active_parcels
+Maya | 0
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: 

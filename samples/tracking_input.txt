@@ -1,0 +1,28 @@
+5
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+1
+6
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+In Transit
+Hub
+6
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+Out for Delivery
+Town B
+7
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+Failed
+Receiver absent
+Town B
+7
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+Delivered
+Town B
+8
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+6
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe
+Returned
+Hub
+9
+0

@@ -1,0 +1,36 @@
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Name: Phone: Address: Customer ID: 1
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Name: Phone: Address: Customer ID: 2
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Staff name: Staff ID: 1
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: Sender ID: Receiver ID: Parcel type: Weight in kg: Destination: Zone (local/regional/national): Service (standard/express): Booked CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe | INR 150 | Due 2026-11-20
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: id | name | phone | address
+1 | Ravi | 10001 | Town A
+2 | Priya | 10002 | Town B
+id | name
+1 | Maya
+tracking | status | charge
+CP-4d03b1cf-fa0e-4eeb-8938-72f04732dbbe | Booked | 150
+
+1 Add customer   2 Add delivery staff   3 List records   4 Book parcel
+5 Assign staff   6 Record movement      7 Record attempt
+8 Track parcel   9 Reports               0 Exit
+Choice: 

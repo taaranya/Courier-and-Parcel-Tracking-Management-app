@@ -1,0 +1,8 @@
+PRAGMA foreign_keys=ON;
+CREATE TABLE IF NOT EXISTS customer(id INTEGER PRIMARY KEY,name TEXT NOT NULL,phone TEXT NOT NULL,address TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS courier_staff(id INTEGER PRIMARY KEY,name TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS parcel(id INTEGER PRIMARY KEY,tracking TEXT NOT NULL UNIQUE,sender INTEGER NOT NULL REFERENCES customer,receiver INTEGER NOT NULL REFERENCES customer,kind TEXT NOT NULL,kg REAL NOT NULL CHECK(kg>0),destination TEXT NOT NULL,zone TEXT NOT NULL CHECK(zone IN ('local','regional','national')),service TEXT NOT NULL CHECK(service IN ('standard','express')),booked TEXT NOT NULL,due TEXT NOT NULL CHECK(due>=booked),charge INTEGER NOT NULL CHECK(charge>0));
+CREATE TABLE IF NOT EXISTS assignment(id INTEGER PRIMARY KEY,parcel_id INTEGER NOT NULL REFERENCES parcel,staff_id INTEGER NOT NULL REFERENCES courier_staff,assigned TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS movement(id INTEGER PRIMARY KEY,parcel_id INTEGER NOT NULL REFERENCES parcel,stamp TEXT NOT NULL,status TEXT NOT NULL CHECK(status IN ('Booked','In Transit','Out for Delivery','Delivered','Returned')),location TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS attempt(id INTEGER PRIMARY KEY,parcel_id INTEGER NOT NULL REFERENCES parcel,stamp TEXT NOT NULL,outcome TEXT NOT NULL CHECK(outcome IN ('Delivered','Failed')),reason TEXT NOT NULL,CHECK(outcome='Delivered' OR length(trim(reason))>0));
+CREATE VIEW IF NOT EXISTS shipment AS SELECT p.*, (SELECT status FROM movement WHERE parcel_id=p.id ORDER BY id DESC LIMIT 1) status,(SELECT staff_id FROM assignment WHERE parcel_id=p.id ORDER BY id DESC LIMIT 1) staff FROM parcel p;
